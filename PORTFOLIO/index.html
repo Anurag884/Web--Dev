@@ -6,27 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <title>Anurag | Creative Web Developer</title>
+  <title>Anurag Gautam | Creative Web Developer</title>
 </head>
 <body>
   <nav>
     <div class="nav__content">
-      <div class="logo"><a href="#">Anurag</a></div>
+      <div class="logo"><a href="#home">Anurag Gautam</a></div>
       <label for="check" class="checkbox">
         <i class="ri-menu-line"></i>
       </label>
       <input type="checkbox" name="check" id="check" />
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Resume</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <section class="section">
+  <!-- Hero Section -->
+  <section id="home" class="section">
     <div class="section__container">
       <div class="content">
         <p class="subtitle">HELLO</p>
@@ -34,17 +35,281 @@
           I'm <span>Anurag<br />a</span> Creative Web Developer
         </h1>
         <p class="description">
-          Hi! I'm Anurag — a beginner web developer with a creative mindset. I'm learning to build clean, responsive, and user-friendly websites. Every day, I’m growing by turning new ideas into beautiful code!
+          Hi! I'm Anurag — a passionate web developer with a creative mindset. I specialize in building clean, responsive, and user-friendly websites. Every day, I'm growing by turning new ideas into beautiful code!
         </p>
         <div class="action__btns">
-          <button class="hire__me">Hire Me</button>
-          <button class="portfolio">Portfolio</button>
+          <button class="hire__me" onclick="scrollToSection('contact')">Hire Me</button>
+          <button class="portfolio" onclick="scrollToSection('projects')">Portfolio</button>
         </div>
       </div>
       <div class="image">
-        <img src="☆.jpeg" alt="Anant Profile" />
+        <img src="spider-sense-spiderman-miles-morales-into-the-spider-verse-uhdpaper.com-4K-8.1741.jpg" alt="Anurag Profile" />
       </div>
     </div>
   </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            I'm a dedicated web developer passionate about creating digital experiences that make a difference. 
+            With a strong foundation in modern web technologies, I love turning complex problems into simple, 
+            beautiful, and intuitive solutions.
+          </p>
+          <p>
+            When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, 
+            or sharing knowledge with the developer community. I believe in continuous learning and staying 
+            up-to-date with the latest trends in web development.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <h3>50+</h3>
+              <p>Projects Completed</p>
+            </div>
+            <div class="stat">
+              <h3>2+</h3>
+              <p>Years Experience</p>
+            </div>
+            <div class="stat">
+              <h3>100%</h3>
+              <p>Client Satisfaction</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <h2 class="section-title">Skills & Technologies</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Frontend Development</h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <i class="ri-html5-line"></i>
+              <span>HTML5</span>
+            </div>
+            <div class="skill-item">
+              <i class="ri-css3-line"></i>
+              <span>CSS3</span>
+            </div>
+            <div class="skill-item">
+              <i class="ri-javascript-line"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-item">
+              <i class="ri-reactjs-line"></i>
+              <span>React</span>
+            </div>
+            <div class="skill-item">
+              <i class="ri-bootstrap-line"></i>
+              <span>Bootstrap</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Backend Development</h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <i class="ri-nodejs-line"></i>
+              <span>Node.js</span>
+            </div>
+            <div class="skill-item">
+              <i class="ri-database-2-line"></i>
+              <span>MongoDB</span>
+            </div>
+            <div class="skill-item">
+              <i class="ri-database-line"></i>
+              <span>MySQL</span>
+            </div>
+            <div class="skill-item">
+              <i class="ri-git-branch-line"></i>
+              <span>Git</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Tools & Others</h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <i class="ri-figma-line"></i>
+              <span>Figma</span>
+            </div>
+            <div class="skill-item">
+              <i class="ri-github-line"></i>
+              <span>GitHub</span>
+            </div>
+            <div class="skill-item">
+              <i class="ri-terminal-line"></i>
+              <span>VS Code</span>
+            </div>
+            <div class="skill-item">
+              <i class="ri-cloud-line"></i>
+              <span>AWS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="Batman Telltale.jpeg" alt="Project 1" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="ri-external-link-line"></i></a>
+                <a href="#" class="project-link"><i class="ri-github-line"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>E-Commerce Website</h3>
+            <p>A fully responsive e-commerce platform built with React and Node.js, featuring user authentication, payment integration, and admin dashboard.</p>
+            <div class="project-tech">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+              <span>Stripe</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <i class="ri-code-s-slash-line"></i>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="ri-external-link-line"></i></a>
+                <a href="#" class="project-link"><i class="ri-github-line"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Task Management App</h3>
+            <p>A collaborative task management application with real-time updates, team collaboration features, and progress tracking.</p>
+            <div class="project-tech">
+              <span>Vue.js</span>
+              <span>Express</span>
+              <span>Socket.io</span>
+              <span>PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <i class="ri-palette-line"></i>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="ri-external-link-line"></i></a>
+                <a href="#" class="project-link"><i class="ri-github-line"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Portfolio Website</h3>
+            <p>A modern, responsive portfolio website showcasing projects and skills with smooth animations and clean design.</p>
+            <div class="project-tech">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>GSAP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Let's work together!</h3>
+          <p>I'm always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="ri-mail-line"></i>
+              <span>anurag@example.com</span>
+            </div>
+            <div class="contact-item">
+              <i class="ri-phone-line"></i>
+              <span>+1 (555) 123-4567</span>
+            </div>
+            <div class="contact-item">
+              <i class="ri-map-pin-line"></i>
+              <span>Your City, Country</span>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="ri-github-line"></i></a>
+            <a href="#" class="social-link"><i class="ri-linkedin-line"></i></a>
+            <a href="#" class="social-link"><i class="ri-twitter-line"></i></a>
+            <a href="#" class="social-link"><i class="ri-instagram-line"></i></a>
+          </div>
+        </div>
+        <form class="contact-form">
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Subject" required>
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Anurag. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function scrollToSection(sectionId) {
+      document.getElementById(sectionId).scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('nav ul li a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('check').checked = false;
+      });
+    });
+
+    // Form submission
+    document.querySelector('.contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for your message! I\'ll get back to you soon.');
+      this.reset();
+    });
+  </script>
 </body>
 </html>
